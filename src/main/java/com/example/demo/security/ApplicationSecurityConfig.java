@@ -46,7 +46,8 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest()
                 .authenticated()
                 .and()
-                .httpBasic();// will enable Http Basic Authentication for your application with some "reasonable" defaults.
+//                .httpBasic();// will enable Http Basic Authentication for your application with some "reasonable" defaults.
+                .formLogin();
     }
 
     @Override
